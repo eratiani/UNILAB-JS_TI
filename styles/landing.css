@@ -1,0 +1,113 @@
+.container--center {
+  width: 79.069vw;
+  min-height: 32px;
+  margin: 0 auto;
+}
+
+.btn--primary {
+  border-radius: 10px;
+  padding: 8px 20px 8px 20px;
+  gap: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #ff6700;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--primary:hover {
+  background-color: #c85100;
+}
+
+.container--main {
+  position: relative;
+}
+.container--main .header {
+  width: 79.069vw;
+  min-height: 32px;
+  margin-top: 8px;
+  position: absolute;
+  left: 10.5%;
+}
+.container--main .header .logo {
+  font-family: Kalnia;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 32.28px;
+}
+.container--main .sec--1 {
+  width: 100vw;
+  height: 147px;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/img/img-mobile/sec-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container--main .sec--1 .container__sec--1 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #ffffff;
+  text-align: center;
+}
+.container--main .sec--1 .container__sec--1 .sec__1--title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.13px;
+  letter-spacing: 10%;
+}
+.container--main .sec--1 .container__sec--1 .sec__1--btn {
+  width: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container--main .sec__2--title-g {
+  font-weight: 500;
+  color: #424244;
+  opacity: 100%;
+  font-size: 22px;
+  line-height: 25.78px;
+  margin-bottom: 8px;
+}
+.container--main .sec--2 {
+  padding-top: 33px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #252525;
+  opacity: 80%;
+}
+.container--main .sec--2 .sec__2__container--text .sec__2--p {
+  margin-bottom: 12px;
+}
+.container--main .sec--2 .sec__2__container--cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.container--main .sec--2 .sec__2__container--cards .sec__2__container--card .sec__2__card__container--img {
+  margin-bottom: 8px;
+}
+.container--main .sec--2 .sec__2__container--cards .sec__2__container--card .sec__2__card__container--img > img {
+  max-width: 100%;
+  width: 100%;
+  min-height: 221px;
+  height: 100%;
+}
+.container--main .sec--2 .sec__2--link {
+  font-family: Roboto;
+  font-weight: 500;
+  display: block;
+  font-size: 20px;
+  line-height: 23.44px;
+  margin-top: 24px;
+  color: #c85100;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=landing.css.map */
