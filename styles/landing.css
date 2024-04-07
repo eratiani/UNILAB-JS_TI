@@ -37,7 +37,7 @@
 }
 .container--main .sec--1 {
   width: 100vw;
-  height: 147px;
+  height: 217px;
   padding-top: 70px;
   display: flex;
   justify-content: center;
@@ -178,6 +178,8 @@
   font-size: 22px;
   line-height: 25.78px;
   margin-top: 24px;
+  padding-bottom: 16px;
+  background-color: #e0e0e0;
 }
 .container--main .sec--6 .sec__6--title {
   margin-bottom: 12px;
@@ -185,7 +187,6 @@
 .container--main .sec--6 .sec__6__container--content {
   padding-top: 12px;
   padding-bottom: 16px;
-  background-color: #e0e0e0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
@@ -196,10 +197,83 @@
   color: white;
   margin-top: 12px;
   background-color: #ff6700;
-  transition: all ease-in-out 0.33ms;
+  transition: all ease-in-out 0.33s;
 }
 .container--main .sec--6 .sec__6__container--content .sec__6__btn--submit:hover {
   background-color: #c85100;
+}
+.container--main .sec--6 .sec__6__container--content .sec__6__btn--submit .sec__6--form {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.container--main .sec--7 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #e0e0e0;
+  color: #424244;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+.container--main .sec--7 .sec__7--title {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 37.66px;
+  margin-bottom: 20px;
+}
+.container--main .sec--7 .sec__7__title--1 {
+  font-family: Kalnia;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32.81px;
+  margin-bottom: 20px;
+}
+.container--main .sec--7 .sec__7--p {
+  margin-bottom: 20px;
+}
+.container--main .sec--7 .sec__7__social--container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.container--main .sec--7 .sec__7__social--container > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+.container--main .sec--7 .sec__7__social--container > a > img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.container--main .sec--7 .sec__7--li {
+  margin-bottom: 20px;
+}
+.container--main .sec--7 .sec__7--li > a {
+  display: block;
+}
+.container--main .sec--7 .sec__7__contact--number {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container--main .sec--7 .sec__7__form--subscribe {
+  position: relative;
+}
+.container--main .sec--7 .sec__7__form--subscribe > input {
+  padding: 10px 13px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.container--main .sec--7 .sec__7__form--subscribe > button {
+  position: absolute;
+  left: 245px;
+  top: 27%;
+}
+.container--main .footer {
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 .container--main .footer .footer--text {
   text-align: center;
