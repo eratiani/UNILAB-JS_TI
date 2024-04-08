@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/landing.css" />
     <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"
@@ -22,20 +23,74 @@
           <div class="burger__line-2"></div>
           <div class="burger__line-3"></div>
         </div>
-        <nav class="nav__main--dsc"></nav>
+        <nav class="nav__main--dsc">
+          <ul class="nav__desktop--ul">
+            <li class="nav__desktop--li">
+              <a href="./index.html" class="nav__desktop--link">Home</a>
+            </li>
+            <li class="nav__desktop--li">
+              <a href="" class="nav__desktop--link">About us</a>
+            </li>
+            <li class="nav__desktop--li">
+              <a href="" class="nav__desktop--link">Blogs</a>
+            </li>
+            <li class="nav__desktop--li">
+              <a href="./pages/services.html" class="nav__desktop--link"
+                >Our services</a
+              >
+            </li>
+            <li class="nav__desktop--li">
+              <a href="" class="nav__desktop--link">Our offers</a>
+            </li>
+            <li class="nav__desktop--li">
+              <div class="container__signup--img">
+                <img
+                  src="./assets/img/logo/User.png"
+                  alt="img"
+                  class="signup--img"
+                />
+              </div>
+              <ul class="nav__desctop--signup">
+                <li class="nav__desktop__signup--li">
+                  <a
+                    href="./pages/user-pages/log-in.html"
+                    class="nav__desktop__signup--link"
+                    >Sign in</a
+                  >
+                </li>
+                <li class="nav__desktop__signup--li">
+                  <a
+                    href="./pages/user-pages/register.html"
+                    class="nav__desktop__signup--link"
+                    >Sign up</a
+                  >
+                </li>
+                <li class="nav__desktop__signup--li">
+                  <a href="" class="nav__desktop__signup--link">Sign out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
         <nav class="nav__main--mobile">
           <div class="nav__mobile__close--btn">
             <img src="./assets/img/logo/x.png" alt="x" srcset="" />
           </div>
           <ul class="nav__mobile--ul">
             <li class="nav__mobile--li">
-              <a href="" class="nav__mobile--link">Sign in</a>
+              <a href="./pages/user-pages/log-in.html" class="nav__mobile--link"
+                >Sign in</a
+              >
             </li>
             <li class="nav__mobile--li">
-              <a href="" class="nav__mobile--link">Sign up</a>
+              <a
+                href="./pages/user-pages/register.html"
+                class="nav__mobile--link"
+                >Sign up</a
+              >
             </li>
             <li class="nav__mobile--li">
-              <a href="" class="nav__mobile--link">Home</a>
+              <a href="./index.html" class="nav__mobile--link">Home</a>
             </li>
             <li class="nav__mobile--li">
               <a href="" class="nav__mobile--link">About us</a>
@@ -44,7 +99,9 @@
               <a href="" class="nav__mobile--link">Blogs</a>
             </li>
             <li class="nav__mobile--li">
-              <a href="" class="nav__mobile--link">Our services</a>
+              <a href="./pages/services.html" class="nav__mobile--link"
+                >Our services</a
+              >
             </li>
             <li class="nav__mobile--li">
               <a href="" class="nav__mobile--link">Our offers</a>
@@ -309,10 +366,9 @@
                     class="sec__7__subscribe--input"
                     type="email"
                     name=""
-                    id="subEmail"
                     placeholder="email"
                   />
-                  <button class="sec__7__subscribe--btn">
+                  <button class="sec__7__subscribe--btn" id="subEmail">
                     <img
                       src="./assets/img/logo/arrow-right.png"
                       alt="arrow"

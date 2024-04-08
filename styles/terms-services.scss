@@ -1,0 +1,172 @@
+@import "variables";
+
+.container--center {
+  width: 79.069vw;
+  min-height: 32px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 85vw;
+  }
+}
+.btn--primary {
+  border-radius: 10px;
+  padding: 8px 20px 8px 20px;
+  gap: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: $primary-btn-color;
+  transition: all ease-in-out 0.3s;
+  @media (min-width: 768px) {
+    padding: 10px 30px 10px 30px;
+  }
+  @media (min-width: 1300px) {
+    .burger--container {
+      display: none;
+    }
+    padding: 20px 40px 20px 40px;
+  }
+}
+.btn--primary:hover {
+  background-color: $primary-btn-hover;
+}
+/////// global classses
+.container--main {
+  .container--header {
+    position: relative;
+    background-color: #eae9e9;
+
+    .header {
+      width: 85vw;
+      min-height: 32px;
+      margin-top: 8px;
+      position: absolute;
+      left: 7.5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        font-family: Kalnia;
+        font-size: 24px;
+        font-weight: 500;
+        color: $primary-text-color;
+        line-height: 32.28px;
+        @media (min-width: 768px) {
+          font-size: 28px;
+        }
+      }
+      .burger--container {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 3px;
+        > div {
+          width: 24px;
+          border: 1.5px solid white;
+        }
+      }
+      .nav__main--mobile {
+        padding: 20px 46px 20px 28px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        color: $primary-text-color;
+        width: 184px;
+        position: relative;
+        z-index: 5;
+        display: none;
+        > ul {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          :nth-child(2) {
+            position: relative;
+            margin-bottom: 12px;
+            ::after {
+              content: "";
+              position: absolute;
+              bottom: -12px;
+              left: 0;
+              right: 30px;
+              border: solid black 1px;
+            }
+          }
+          > li {
+            > a {
+              transition: all ease-in-out 0.3s;
+              &:hover {
+                color: $primary-btn-hover;
+              }
+            }
+          }
+        }
+        .nav__mobile__close--btn {
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          > img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            transition: all ease-in-out 0.3s;
+            &:hover {
+              transform: scale(1.6);
+            }
+          }
+        }
+      }
+      .nav__main--dsc {
+        display: none;
+        .nav__desktop--ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 40px;
+          color: #ffffff;
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 32.81px;
+          letter-spacing: 5%;
+          > li {
+            > a {
+              transition: all ease-in-out 0.3s;
+              &:hover {
+                color: $primary-btn-hover;
+              }
+            }
+            .container__signup--img {
+              cursor: pointer;
+            }
+            .nav__desctop--signup {
+              display: none;
+              > li {
+                > a {
+                  transition: all ease-in-out 0.3s;
+                  &:hover {
+                    color: $primary-btn-hover;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        padding: 10px 30px 10px 30px;
+      }
+      @media (min-width: 1300px) {
+        .burger--container {
+          display: none;
+        }
+        .nav__main--dsc {
+          display: block;
+        }
+      }
+    }
+  }
+  ///navigation mob
+  ///navigation mob
+}

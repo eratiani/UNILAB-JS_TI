@@ -1,0 +1,172 @@
+.container--center {
+  width: 79.069vw;
+  min-height: 32px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container--center {
+    width: 85vw;
+  }
+}
+
+.btn--primary {
+  border-radius: 10px;
+  padding: 8px 20px 8px 20px;
+  gap: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #ff6700;
+  transition: all ease-in-out 0.3s;
+}
+@media (min-width: 768px) {
+  .btn--primary {
+    padding: 10px 30px 10px 30px;
+  }
+}
+@media (min-width: 1300px) {
+  .btn--primary {
+    padding: 20px 40px 20px 40px;
+  }
+  .btn--primary .burger--container {
+    display: none;
+  }
+}
+
+.btn--primary:hover {
+  background-color: #c85100;
+}
+
+.container--main .container--header {
+  position: relative;
+  background-color: #eae9e9;
+}
+.container--main .container--header .header {
+  width: 85vw;
+  min-height: 32px;
+  margin-top: 8px;
+  position: absolute;
+  left: 7.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container--main .container--header .header .logo {
+  font-family: Kalnia;
+  font-size: 24px;
+  font-weight: 500;
+  color: #424244;
+  line-height: 32.28px;
+}
+@media (min-width: 768px) {
+  .container--main .container--header .header .logo {
+    font-size: 28px;
+  }
+}
+.container--main .container--header .header .burger--container {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 3px;
+}
+.container--main .container--header .header .burger--container > div {
+  width: 24px;
+  border: 1.5px solid white;
+}
+.container--main .container--header .header .nav__main--mobile {
+  padding: 20px 46px 20px 28px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #424244;
+  width: 184px;
+  position: relative;
+  z-index: 5;
+  display: none;
+}
+.container--main .container--header .header .nav__main--mobile > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container--main .container--header .header .nav__main--mobile > ul :nth-child(2) {
+  position: relative;
+  margin-bottom: 12px;
+}
+.container--main .container--header .header .nav__main--mobile > ul :nth-child(2) ::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 30px;
+  border: solid black 1px;
+}
+.container--main .container--header .header .nav__main--mobile > ul > li > a {
+  transition: all ease-in-out 0.3s;
+}
+.container--main .container--header .header .nav__main--mobile > ul > li > a:hover {
+  color: #c85100;
+}
+.container--main .container--header .header .nav__main--mobile .nav__mobile__close--btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.container--main .container--header .header .nav__main--mobile .nav__mobile__close--btn > img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out 0.3s;
+}
+.container--main .container--header .header .nav__main--mobile .nav__mobile__close--btn > img:hover {
+  transform: scale(1.6);
+}
+.container--main .container--header .header .nav__main--dsc {
+  display: none;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32.81px;
+  letter-spacing: 5%;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li > a {
+  transition: all ease-in-out 0.3s;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li > a:hover {
+  color: #c85100;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .container__signup--img {
+  cursor: pointer;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup {
+  display: none;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a {
+  transition: all ease-in-out 0.3s;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a:hover {
+  color: #c85100;
+}
+@media (min-width: 768px) {
+  .container--main .container--header .header {
+    padding: 10px 30px 10px 30px;
+  }
+}
+@media (min-width: 1300px) {
+  .container--main .container--header .header .burger--container {
+    display: none;
+  }
+  .container--main .container--header .header .nav__main--dsc {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */
