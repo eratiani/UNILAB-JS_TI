@@ -17,9 +17,40 @@
     <div class="container--main">
       <header class="header">
         <div class="container--logo"><h1 class="logo">ExploreEra</h1></div>
-        <div class="burger--container"></div>
+        <div class="burger--container">
+          <div class="burger__line-1"></div>
+          <div class="burger__line-2"></div>
+          <div class="burger__line-3"></div>
+        </div>
         <nav class="nav__main--dsc"></nav>
-        <nav class="nav__main--mobile"></nav>
+        <nav class="nav__main--mobile">
+          <div class="nav__mobile__close--btn">
+            <img src="./assets/img/logo/x.png" alt="x" srcset="" />
+          </div>
+          <ul class="nav__mobile--ul">
+            <li class="nav__mobile--li">
+              <a href="" class="nav__mobile--link">Sign in</a>
+            </li>
+            <li class="nav__mobile--li">
+              <a href="" class="nav__mobile--link">Sign up</a>
+            </li>
+            <li class="nav__mobile--li">
+              <a href="" class="nav__mobile--link">Home</a>
+            </li>
+            <li class="nav__mobile--li">
+              <a href="" class="nav__mobile--link">About us</a>
+            </li>
+            <li class="nav__mobile--li">
+              <a href="" class="nav__mobile--link">Blogs</a>
+            </li>
+            <li class="nav__mobile--li">
+              <a href="" class="nav__mobile--link">Our services</a>
+            </li>
+            <li class="nav__mobile--li">
+              <a href="" class="nav__mobile--link">Our offers</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <section class="sec--1">
         <div class="container__sec--1">
@@ -39,6 +70,8 @@
               customized itineraries to individual preferences.
             </p>
           </div>
+          <a href="" class="sec__2--link2 sec__2--link">see all</a>
+
           <div class="sec__2__container--cards">
             <div class="sec__2__container--card">
               <div class="sec__2__card__container--img">
@@ -48,7 +81,22 @@
                   class="sec__2__card--img"
                 />
               </div>
-              <h3 class="sec__2--title-g">Book Flight</h3>
+              <h3 class="sec__2--title-g sec__2__title--1">Book Flight</h3>
+              <p class="sec__2__card--p">
+                book memorable journey with our flight booking services! we're
+                thrilled to present you flight options to suit your travel
+                needs.
+              </p>
+            </div>
+            <div class="sec__2__container--card">
+              <div class="sec__2__card__container--img">
+                <img
+                  src="./assets/img/img-mobile/sec-2-1.png"
+                  alt="img"
+                  class="sec__2__card--img"
+                />
+              </div>
+              <h3 class="sec__2--title-g sec__2__title--1">Book Flight</h3>
               <p class="sec__2__card--p">
                 book memorable journey with our flight booking services! we're
                 thrilled to present you flight options to suit your travel
@@ -56,7 +104,7 @@
               </p>
             </div>
           </div>
-          <a href="" class="sec__2--link">see all</a>
+          <a href="" class="sec__2--link1 sec__2--link">see all</a>
         </div>
       </section>
       <section class="sec--3">
@@ -123,145 +171,155 @@
       <section class="sec--6">
         <div class="container--center">
           <h2 class="sec__6--title">Ready To Book A Trip?</h2>
-          <div class="sec__6__container--content">
-            <form class="max-w-sm sec__6--form">
-              <select
-                id="sec__6__start--location"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              >
-                <option selected>Your starting location</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-              </select>
-
-              <select
-                id="sec__6__end--location"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              >
-                <option selected>Your end location</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-              </select>
-              <div class="relative max-w-sm">
-                <div
-                  class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+        </div>
+        <div class="sec__6--wrapper">
+          <div class="container--center">
+            <div class="sec__6__container--content">
+              <form class="sec__6--form">
+                <select
+                  id="sec__6__start--location"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
-                  <svg
-                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
+                  <option selected>Your starting location</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+
+                <select
+                  id="sec__6__end--location"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                >
+                  <option selected>Your end location</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+                <div class="relative max-w-sm">
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
                   >
-                    <path
-                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                    />
-                  </svg>
+                    <svg
+                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    datepicker
+                    type="text"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Select date"
+                  />
                 </div>
-                <input
-                  datepicker
-                  type="text"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Select date"
-                />
-              </div>
-              <select
-                id="sec__6__people--count"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              >
-                <option selected>Persons</option>
-                <option value="one">one</option>
-                <option value="two">two</option>
-                <option value="three">three</option>
-                <option value="four">four</option>
-                <option value="five">five</option>
-                <option value="six">six</option>
-                <option value="seven">seven</option>
-                <option value="more">more</option>
-              </select>
-              <button type="submit" class="sec__6__btn--submit">
-                Book Now
-              </button>
-            </form>
+                <select
+                  id="sec__6__people--count"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                >
+                  <option selected>Persons</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                  <option value="four">four</option>
+                  <option value="five">five</option>
+                  <option value="six">six</option>
+                  <option value="seven">seven</option>
+                  <option value="more">more</option>
+                </select>
+                <button type="submit" class="sec__6__btn--submit">
+                  Book Now
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
       <section class="sec--7">
         <div class="container--center">
-          <h3 class="sec__7__title--1">ExploreEra</h3>
-          <p class="sec__7--p">
-            Travel agency which helps you to plan your perfect holidays
-          </p>
-          <h3 class="sec__7__title--2 sec__7--title">Follow us</h3>
-          <div class="sec__7__social--container">
-            <a href="" class="sec__7__social--link"
-              ><img
-                src="./assets/img/logo/camera.png"
-                alt="camera"
-                class="sec__7__social--img"
-              /> </a
-            ><a href="" class="sec__7__social--link"
-              ><img
-                src="./assets/img/logo/fb.png"
-                alt="fb"
-                class="sec__7__social--img"
-            /></a>
-            <a href="" class="sec__7__social--link"
-              ><img
-                src="./assets/img/logo/ln.png"
-                alt="ln"
-                class="sec__7__social--img"
-            /></a>
-          </div>
-          <div>
-            <h3 class="sec__7__title--3 sec__7--title">Links</h3>
-            <ul class="sec__7--ul">
-              <li class="sec__7--li">
-                <a href="" class="sec__7--link">Home</a>
-              </li>
-              <li class="sec__7--li">
-                <a href="" class="sec__7--link">About us</a>
-              </li>
-              <li class="sec__7--li">
-                <a href="" class="sec__7--link">Blogs</a>
-              </li>
-              <li class="sec__7--li">
-                <a href="" class="sec__7--link">Our services</a>
-              </li>
-              <li class="sec__7--li">
-                <a href="" class="sec__7--link">Our offers</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="sec__7__title--4 sec__7--title">Contact us</h3>
-            <a href="mailto:exploreera@gmail.com" class="sec__7__contact--email"
-              >exploreera@gmail.com</a
-            >
-            <p class="sec__7__contact--number">555111222</p>
-          </div>
-          <div>
-            <h3 class="sec__7__title--5 sec__7--title">Subscribe news</h3>
-            <form class="sec__7__form--subscribe">
-              <input
-                class="sec__7__subscribe--input"
-                type="email"
-                name=""
-                id="subEmail"
-                placeholder="email"
-              />
-              <button class="sec__7__subscribe--btn">
-                <img
-                  src="./assets/img/logo/arrow-right.png"
-                  alt="arrow"
-                  class="sec__7__subscribe--img"
+          <div class="container__sec__7--content">
+            <div>
+              <h3 class="sec__7__title--1">ExploreEra</h3>
+              <p class="sec__7--p">
+                Travel agency which helps you to plan your perfect holidays
+              </p>
+              <h3 class="sec__7__title--2 sec__7--title">Follow us</h3>
+              <div class="sec__7__social--container">
+                <a href="" class="sec__7__social--link"
+                  ><img
+                    src="./assets/img/logo/camera.png"
+                    alt="camera"
+                    class="sec__7__social--img"
+                  /> </a
+                ><a href="" class="sec__7__social--link"
+                  ><img
+                    src="./assets/img/logo/fb.png"
+                    alt="fb"
+                    class="sec__7__social--img"
+                /></a>
+                <a href="" class="sec__7__social--link"
+                  ><img
+                    src="./assets/img/logo/ln.png"
+                    alt="ln"
+                    class="sec__7__social--img"
+                /></a>
+              </div>
+            </div>
+            <div>
+              <h3 class="sec__7__title--3 sec__7--title">Links</h3>
+              <ul class="sec__7--ul">
+                <li class="sec__7--li">
+                  <a href="" class="sec__7--link">Home</a>
+                </li>
+                <li class="sec__7--li">
+                  <a href="" class="sec__7--link">About us</a>
+                </li>
+                <li class="sec__7--li">
+                  <a href="" class="sec__7--link">Blogs</a>
+                </li>
+                <li class="sec__7--li">
+                  <a href="" class="sec__7--link">Our services</a>
+                </li>
+                <li class="sec__7--li">
+                  <a href="" class="sec__7--link">Our offers</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="sec__7__title--4 sec__7--title">Contact us</h3>
+              <a
+                href="mailto:exploreera@gmail.com"
+                class="sec__7__contact--email"
+                >exploreera@gmail.com</a
+              >
+              <p class="sec__7__contact--number">555111222</p>
+            </div>
+            <div>
+              <h3 class="sec__7__title--5 sec__7--title">Subscribe news</h3>
+              <form class="sec__7__form--subscribe">
+                <input
+                  class="sec__7__subscribe--input"
+                  type="email"
+                  name=""
+                  id="subEmail"
+                  placeholder="email"
                 />
-              </button>
-            </form>
+                <button class="sec__7__subscribe--btn">
+                  <img
+                    src="./assets/img/logo/arrow-right.png"
+                    alt="arrow"
+                    class="sec__7__subscribe--img"
+                  />
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
