@@ -19,6 +19,9 @@
   @media (min-width: 768px) {
     padding: 10px 30px 10px 30px;
   }
+  @media (min-width: 1300px) {
+    padding: 20px 40px 20px 40px;
+  }
 }
 .btn--primary:hover {
   background-color: $primary-btn-hover;
@@ -148,6 +151,11 @@
         }
       }
     }
+    @media (min-width: 1300px) {
+      padding-top: 348px;
+
+      height: 885px;
+    }
   }
   /////// sec-1
 
@@ -236,6 +244,11 @@
         display: none;
       }
     }
+    @media (min-width: 1300px) {
+      .sec__2__container--cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
   }
   /// sec-2
 
@@ -262,6 +275,13 @@
       .sec__3__container--iframe {
         .sec__3--iframe {
           min-height: 320px;
+        }
+      }
+    }
+    @media (min-width: 1300px) {
+      .sec__3__container--iframe {
+        .sec__3--iframe {
+          min-height: 750px;
         }
       }
     }
@@ -299,6 +319,11 @@
         display: grid;
         overflow: hidden;
         grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (min-width: 1300px) {
+      .sec__4__container--cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
     }
   }
@@ -344,6 +369,11 @@
       }
       .sec__5__container--cards {
         grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (min-width: 1300px) {
+      .sec__5__container--cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
     }
   }
@@ -407,6 +437,10 @@
           }
         }
       }
+    }
+    @media (min-width: 1300px) {
+      background-color: #e0e0e0;
+      padding-top: 50px;
     }
   }
   /// sec-6
@@ -482,6 +516,22 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        .container--contacts {
+          grid-column: 1 / span 2;
+          display: flex;
+          gap: 29%;
+        }
+      }
+    }
+    @media (min-width: 1300px) {
+      .container__sec__7--content {
+        grid-template-columns: 15% 20% 20%;
+        gap: 15%;
+        .container--contacts {
+          flex-direction: column;
+          grid-column: 3 / span 2;
+          gap: 15px;
+        }
       }
     }
   }

@@ -23,6 +23,11 @@
     padding: 10px 30px 10px 30px;
   }
 }
+@media (min-width: 1300px) {
+  .btn--primary {
+    padding: 20px 40px 20px 40px;
+  }
+}
 
 .btn--primary:hover {
   background-color: #c85100;
@@ -153,6 +158,12 @@
     margin-top: 12px;
   }
 }
+@media (min-width: 1300px) {
+  .container--main .sec--1 {
+    padding-top: 348px;
+    height: 885px;
+  }
+}
 .container--main .sec__2--title-g {
   font-weight: 500;
   color: #424244;
@@ -229,6 +240,11 @@
     display: none;
   }
 }
+@media (min-width: 1300px) {
+  .container--main .sec--2 .sec__2__container--cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .container--main .sec--3 {
   margin-top: 24px;
 }
@@ -248,6 +264,11 @@
   }
   .container--main .sec--3 .sec__3__container--iframe .sec__3--iframe {
     min-height: 320px;
+  }
+}
+@media (min-width: 1300px) {
+  .container--main .sec--3 .sec__3__container--iframe .sec__3--iframe {
+    min-height: 750px;
   }
 }
 .container--main .sec--4 {
@@ -279,6 +300,11 @@
     display: grid;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .container--main .sec--4 .sec__4__container--cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 .container--main .sec--5 {
@@ -319,6 +345,11 @@
   }
   .container--main .sec--5 .sec__5__container--cards {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .container--main .sec--5 .sec__5__container--cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 .container--main .sec--6 {
@@ -374,6 +405,12 @@
     height: 56px;
     border-radius: 12px;
     grid-column: 1/span 2;
+  }
+}
+@media (min-width: 1300px) {
+  .container--main .sec--6 {
+    background-color: #e0e0e0;
+    padding-top: 50px;
   }
 }
 .container--main .sec--7 {
@@ -449,6 +486,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .container--main .sec--7 .container__sec__7--content .container--contacts {
+    grid-column: 1/span 2;
+    display: flex;
+    gap: 29%;
+  }
+}
+@media (min-width: 1300px) {
+  .container--main .sec--7 .container__sec__7--content {
+    grid-template-columns: 15% 20% 20%;
+    gap: 15%;
+  }
+  .container--main .sec--7 .container__sec__7--content .container--contacts {
+    flex-direction: column;
+    grid-column: 3/span 2;
+    gap: 15px;
   }
 }
 .container--main .footer {
