@@ -1,8 +1,11 @@
+import { openBurger,toggleUserSignIn } from "./utility/utility.js";
+
 function app() {
     const btn = document.querySelector("button")
     const registerForm = document.getElementById("registerForm");
     const inputs = registerForm.querySelectorAll("input");
-
+    openBurger()
+    toggleUserSignIn()
     if (registerForm) {
         registerForm.addEventListener("submit", (e) => {
             e.preventDefault(); 
