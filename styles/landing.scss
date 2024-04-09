@@ -8,6 +8,9 @@
     width: 85vw;
   }
 }
+.display{
+  display: none !important;
+}
 .btn--primary {
   border-radius: 10px;
   padding: 8px 20px 8px 20px;
@@ -68,9 +71,10 @@
       border-radius: 8px;
       color: $primary-text-color;
       width: 184px;
-      position: relative;
+      position: absolute;
+      top: 0;
+      right:0 ;
       z-index: 5;
-      display: none;
       > ul {
         display: flex;
         flex-direction: column;
@@ -89,7 +93,7 @@
         }
         > li {
           > a {
-            color: #ffffff;
+            color: $primary-text-color;
             transition: all ease-in-out 0.3s;
             &:hover {
               color: $primary-btn-hover;
@@ -129,6 +133,7 @@
         line-height: 32.81px;
         letter-spacing: 5%;
         > li {
+         
           > a {
             color: #ffffff;
             transition: all ease-in-out 0.3s;
@@ -136,17 +141,40 @@
               color: $primary-btn-hover;
             }
           }
+          
           .container__signup--img {
             cursor: pointer;
           }
           .nav__desctop--signup {
-            display: none;
+            position: absolute;
+            bottom: -190px;
+            right: 85px;
+            background-color: white;
+            width: 247px;
+            height: 164px;
+            border-radius: 10px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            padding: 10px;
+            
             > li {
               > a {
+                display: block;
+                position: relative;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: -10px;
+                  left: 0;
+                  right: 30px;
+                  border: solid $primary-btn-color 1px;
+                }
                 transition: all ease-in-out 0.3s;
                 &:hover {
                   color: $primary-btn-hover;
                 }
+                
               }
             }
           }
@@ -172,6 +200,8 @@
   .sec--1 {
     width: 100vw;
     height: 217px;
+    max-width: 100%;
+
     padding-top: 70px;
     display: flex;
     justify-content: center;

@@ -9,6 +9,21 @@
   }
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #424244;
+  opacity: 80%;
+  z-index: 6;
+}
+
+.display {
+  display: none !important;
+}
+
 .btn--primary {
   border-radius: 10px;
   padding: 8px 20px 8px 20px;
@@ -70,17 +85,17 @@
 }
 .container--main .container--header .header .burger--container > div {
   width: 24px;
-  border: 1.5px solid white;
+  border: 1.5px solid black;
 }
 .container--main .container--header .header .nav__main--mobile {
   padding: 20px 46px 20px 28px;
   background-color: #ffffff;
   border-radius: 8px;
-  color: #424244;
   width: 184px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 5;
-  display: none;
 }
 .container--main .container--header .header .nav__main--mobile > ul {
   display: flex;
@@ -100,6 +115,7 @@
   border: solid black 1px;
 }
 .container--main .container--header .header .nav__main--mobile > ul > li > a {
+  color: #424244;
   transition: all ease-in-out 0.3s;
 }
 .container--main .container--header .header .nav__main--mobile > ul > li > a:hover {
@@ -147,10 +163,30 @@
   cursor: pointer;
 }
 .container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup {
-  display: none;
+  position: absolute;
+  bottom: -190px;
+  right: 85px;
+  background-color: white;
+  width: 247px;
+  height: 164px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 10px;
 }
 .container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a {
+  display: block;
+  position: relative;
   transition: all ease-in-out 0.3s;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 30px;
+  border: solid #ff6700 1px;
 }
 .container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a:hover {
   color: #c85100;
@@ -166,6 +202,40 @@
   }
   .container--main .container--header .header .nav__main--dsc {
     display: block;
+  }
+}
+.container--main .sec--1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 50vh;
+  overflow-x: scroll;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+  background-color: white;
+}
+.container--main .sec--1 .section__1__header {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37.5px;
+}
+.container--main .sec--1 .section__1--paragraph {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+@media (min-width: 1000px) {
+  .container--main .sec--1 {
+    padding: 60px;
   }
 }
 

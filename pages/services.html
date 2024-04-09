@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/main.css" />
-    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/services.css" />
+    <script defer type="module" src="../js/services.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container--main">
       <div class="container--header">
         <header class="header">
-          <div class="container--logo"><h1 class="logo">ExploreEra</h1></div>
+          <div class="container--logo"><a href="../index.html" class="logo">ExploreEra</a></div>
           <div class="burger--container">
             <div class="burger__line-1"></div>
             <div class="burger__line-2"></div>
@@ -21,7 +22,7 @@
           <nav class="nav__main--dsc">
             <ul class="nav__desktop--ul">
               <li class="nav__desktop--li">
-                <a href="../index.html" class="nav__desktop--link">Home</a>
+                <a href="../../index.html" class="nav__desktop--link">Home</a>
               </li>
               <li class="nav__desktop--li">
                 <a href="" class="nav__desktop--link">About us</a>
@@ -30,7 +31,7 @@
                 <a href="" class="nav__desktop--link">Blogs</a>
               </li>
               <li class="nav__desktop--li">
-                <a href="./services.html" class="nav__desktop--link"
+                <a href="../services.html" class="nav__desktop--link"
                   >Our services</a
                 >
               </li>
@@ -45,12 +46,16 @@
                     class="signup--img"
                   />
                 </div>
-                <ul class="nav__desctop--signup">
+                <ul class="nav__desctop--signup display">
                   <li class="nav__desktop__signup--li">
-                    <a href="" class="nav__desktop__signup--link">Sign in</a>
+                    <a href="./log-in.html" class="nav__desktop__signup--link"
+                      >Sign in</a
+                    >
                   </li>
                   <li class="nav__desktop__signup--li">
-                    <a href="" class="nav__desktop__signup--link">Sign up</a>
+                    <a href="./register.html" class="nav__desktop__signup--link"
+                      >Sign up</a
+                    >
                   </li>
                   <li class="nav__desktop__signup--li">
                     <a href="" class="nav__desktop__signup--link">Sign out</a>
@@ -59,23 +64,19 @@
               </li>
             </ul>
           </nav>
-          <nav class="nav__main--mobile">
+          <nav class="nav__main--mobile display">
             <div class="nav__mobile__close--btn">
               <img src="../../assets/img/logo/x.png" alt="x" srcset="" />
             </div>
             <ul class="nav__mobile--ul">
               <li class="nav__mobile--li">
-                <a href="./user-pages/log-in.html" class="nav__mobile--link"
-                  >Sign in</a
-                >
+                <a href="./log-in.html" class="nav__mobile--link">Sign in</a>
               </li>
               <li class="nav__mobile--li">
-                <a href="./user-pages/register.html" class="nav__mobile--link"
-                  >Sign up</a
-                >
+                <a href="./register.html" class="nav__mobile--link">Sign up</a>
               </li>
               <li class="nav__mobile--li">
-                <a href="../index.html" class="nav__mobile--link">Home</a>
+                <a href="../../index.html" class="nav__mobile--link">Home</a>
               </li>
               <li class="nav__mobile--li">
                 <a href="" class="nav__mobile--link">About us</a>

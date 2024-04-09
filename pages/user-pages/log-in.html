@@ -6,13 +6,16 @@
     <link rel="stylesheet" href="../../styles/main.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/log-in.css" />
+    <script type="module" defer src="../../js/landing.js"></script>
+    <script type="module" defer src="../../js/log-in.js"></script>
+
     <title>Document</title>
   </head>
   <body>
     <div class="container--main">
       <div class="container--header">
         <header class="header">
-          <div class="container--logo"><h1 class="logo">ExploreEra</h1></div>
+          <div class="container--logo"><a href="../../index.html" class="logo">ExploreEra</a></div>
           <div class="burger--container">
             <div class="burger__line-1"></div>
             <div class="burger__line-2"></div>
@@ -45,7 +48,7 @@
                     class="signup--img"
                   />
                 </div>
-                <ul class="nav__desctop--signup">
+                <ul class="nav__desctop--signup display">
                   <li class="nav__desktop__signup--li">
                     <a href="./log-in.html" class="nav__desktop__signup--link"
                       >Sign in</a
@@ -67,19 +70,19 @@
               </li>
             </ul>
           </nav>
-          <nav class="nav__main--mobile">
+          <nav class="nav__main--mobile display">
             <div class="nav__mobile__close--btn">
               <img src="../../assets/img/logo/x.png" alt="x" srcset="" />
             </div>
             <ul class="nav__mobile--ul">
               <li class="nav__mobile--li">
-                <a href="" class="nav__mobile--link">Sign in</a>
+                <a href="./log-in.html" class="nav__mobile--link">Sign in</a>
               </li>
               <li class="nav__mobile--li">
-                <a href="" class="nav__mobile--link">Sign up</a>
+                <a href="./register.html" class="nav__mobile--link">Sign up</a>
               </li>
               <li class="nav__mobile--li">
-                <a href="" class="nav__mobile--link">Home</a>
+                <a href="../../index.html" class="nav__mobile--link">Home</a>
               </li>
               <li class="nav__mobile--li">
                 <a href="" class="nav__mobile--link">About us</a>
@@ -100,6 +103,42 @@
 
       <br />
       <br />
+      <section class="sec--1">
+
+        <form id="registerForm" action="/register" method="post">
+       
+          <div class="container--email">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your email address" id="email" />
+          </div>
+          <div class="container--password">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password" id="password" />
+          </div>
+       
+          <button>Continue</button>
+          </form>
+          <div class="section__1--social">
+            <p class="section__1__social--p">
+              Or continue with
+            </p>
+            <div class="section__container--logos">
+              <div class="section__container--logo">
+                <img src="../../assets/img/logo/image 18.png" alt="fb" class="section--img">
+              </div>
+              <div class="section__container--logo">
+                <img src="../../assets/img/logo/image 19.png" alt="apple" class="section--img">
+              </div>
+              <div class="section__container--logo">
+                <img src="../../assets/img/logo/image 20.png" alt="google" class="section--img">
+              </div>
+              <div class="section__container--logo">
+                <img src="../../assets/img/logo/image 22.png" alt="ln" class="section--img">
+              </div>
+            </div>
+            <p class="sectiona--policy">By signing in or creating an account, you agree  with our<span class="emp--span">Terms & conditions</span>  and <span class="emp--span">Privacy policy</span></p>
+          </div>
+      </section>
       <br />
       <br />
       <section class="sec--7">

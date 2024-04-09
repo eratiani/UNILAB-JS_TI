@@ -8,6 +8,17 @@
     width: 85vw;
   }
 }
+.validation-message{
+  margin-top: 10px;
+  font-family: Roboto;
+  font-weight:400;
+  line-height:18.75px ;
+  font-size:16px ;
+  color: #FF0000;
+}
+.display{
+  display: none !important; 
+}
 .btn--primary {
   border-radius: 10px;
   padding: 8px 20px 8px 20px;
@@ -33,6 +44,7 @@
 .container--main {
   .container--header {
     position: relative;
+    height: 70px;
     background-color: #eae9e9;
 
     .header {
@@ -62,18 +74,18 @@
         gap: 3px;
         > div {
           width: 24px;
-          border: 1.5px solid white;
+          border: 1.5px solid black;
         }
       }
       .nav__main--mobile {
         padding: 20px 46px 20px 28px;
         background-color: #ffffff;
         border-radius: 8px;
-        color: $primary-text-color;
         width: 184px;
-        position: relative;
+        position: absolute;
+      top: 0;
+      right:0 ;
         z-index: 5;
-        display: none;
         > ul {
           display: flex;
           flex-direction: column;
@@ -92,6 +104,7 @@
           }
           > li {
             > a {
+              color: $primary-text-color;
               transition: all ease-in-out 0.3s;
               &:hover {
                 color: $primary-btn-hover;
@@ -141,13 +154,35 @@
               cursor: pointer;
             }
             .nav__desctop--signup {
-              display: none;
+              position: absolute;
+              bottom: -190px;
+              right: 85px;
+              background-color: white;
+              width: 247px;
+              height: 164px;
+              border-radius: 10px;
+              display: flex;
+              gap: 20px;
+              flex-direction: column;
+              padding: 10px;
+              
               > li {
                 > a {
+                  display: block;
+                  position: relative;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    right: 30px;
+                    border: solid $primary-btn-color 1px;
+                  }
                   transition: all ease-in-out 0.3s;
                   &:hover {
                     color: $primary-btn-hover;
                   }
+                  
                 }
               }
             }
@@ -169,4 +204,111 @@
   }
   ///navigation mob
   ///navigation mob
+  /// form
+  .sec--1{
+    max-width: 400px;
+     margin: 0 auto;
+  #registerForm{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+
+     >div{
+      display: flex;
+      flex-direction: column;
+      padding: 1px;
+      >label{
+        margin-left: 20px;
+        color: #424244;
+        opacity: 70%;
+        margin-bottom: 10px;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75px;
+      }
+      >input{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 20px;
+        border-radius: 10px;
+        line-height: 23.44px;
+        border: 1px solid #FF6700;
+        padding: 13.5px 10px 13.5px 20px;
+      }
+    }
+    >button{
+      width: 100%;
+      height: 50px;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #FF6700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    
+    }
+  }
+  .section__1--social{
+    margin-top: 20px;
+    .section__1__social--p{
+    margin-bottom: 20px;
+
+      position: relative;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      line-height: 18.75px;
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 112px;
+        border: 1px solid $primary-text-color;
+        
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        right:  0;
+        width: 112px;
+        border: 1px solid $primary-text-color;
+        
+      }
+    }
+    .section__container--logos{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      >div{
+        padding: 15px;
+        border: 1px solid #424244;
+        border-radius: 5px;
+      }
+    }
+    .sectiona--policy{
+      margin-top: 40px;
+      text-align: center;
+      position: relative;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      line-height: 18.75px;
+      &::after{
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        border: 1px solid $primary-text-color;
+      }
+    }
+  }
+}
+  /// form
 }

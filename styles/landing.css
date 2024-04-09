@@ -9,6 +9,10 @@
   }
 }
 
+.display {
+  display: none !important;
+}
+
 .btn--primary {
   border-radius: 10px;
   padding: 8px 20px 8px 20px;
@@ -77,9 +81,10 @@
   border-radius: 8px;
   color: #424244;
   width: 184px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 5;
-  display: none;
 }
 .container--main .header .nav__main--mobile > ul {
   display: flex;
@@ -99,7 +104,7 @@
   border: solid black 1px;
 }
 .container--main .header .nav__main--mobile > ul > li > a {
-  color: #ffffff;
+  color: #424244;
   transition: all ease-in-out 0.3s;
 }
 .container--main .header .nav__main--mobile > ul > li > a:hover {
@@ -148,10 +153,30 @@
   cursor: pointer;
 }
 .container--main .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup {
-  display: none;
+  position: absolute;
+  bottom: -190px;
+  right: 85px;
+  background-color: white;
+  width: 247px;
+  height: 164px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 10px;
 }
 .container--main .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a {
+  display: block;
+  position: relative;
   transition: all ease-in-out 0.3s;
+}
+.container--main .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 30px;
+  border: solid #ff6700 1px;
 }
 .container--main .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a:hover {
   color: #c85100;
@@ -172,6 +197,7 @@
 .container--main .sec--1 {
   width: 100vw;
   height: 217px;
+  max-width: 100%;
   padding-top: 70px;
   display: flex;
   justify-content: center;

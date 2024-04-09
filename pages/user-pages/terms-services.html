@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="../../styles/main.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/terms-services.css" />
+    <script type="module" defer src="../../js/landing.js"></script>
+    <script type="module" defer src="../../js/terms_serv.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container--main">
       <div class="container--header">
         <header class="header">
-          <div class="container--logo"><h1 class="logo">ExploreEra</h1></div>
+          <div class="container--logo"><a href="../../index.html" class="logo">ExploreEra</a></div>
           <div class="burger--container">
             <div class="burger__line-1"></div>
             <div class="burger__line-2"></div>
@@ -43,7 +45,7 @@
                     class="signup--img"
                   />
                 </div>
-                <ul class="nav__desctop--signup">
+                <ul class="nav__desctop--signup display">
                   <li class="nav__desktop__signup--li">
                     <a href="" class="nav__desktop__signup--link">Sign in</a>
                   </li>
@@ -57,7 +59,7 @@
               </li>
             </ul>
           </nav>
-          <nav class="nav__main--mobile">
+          <nav class="nav__main--mobile display">
             <div class="nav__mobile__close--btn">
               <img src="../../assets/img/logo/x.png" alt="x" srcset="" />
             </div>
@@ -87,9 +89,16 @@
           </nav>
         </header>
       </div>
-
+      <div class="overlay"></div>
       <br />
       <br />
+      <section class="sec--1">
+        <h2 class="section__1__header--1 section__1__header">Terms and conditions</h2>
+        <p class="section__1__paragraph--1 section__1--paragraph">Before you use our website or services, please carefully read the following Terms and Conditions. By accessing or using our platform, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, please do not use our services. Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and disclose information about you. By using our services, you consent to our privacy practices.</p>
+        <h2 class="section__1__header--2 section__1--header">Privacy policy</h2>
+        <p class="section__1__paragraph--2 section__1--paragraph">We may collect personal information, such as your name, email address, and other details, when you register an account, make a purchase, or interact with our services. We also automatically collect certain information, such as IP addresses, browser type, and usage patterns, through cookies and similar technologies. Our website may contain links to third-party websites or services.</p>
+        <a class="section__1--link btn--primary" href="">I agree</a>
+      </section>
       <br />
       <br />
       <section class="sec--7">

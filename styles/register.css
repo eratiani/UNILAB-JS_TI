@@ -9,6 +9,23 @@
   }
 }
 
+.display {
+  display: none !important;
+}
+
+.validation-message {
+  margin-top: 10px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18.75px;
+  font-size: 16px;
+  color: #FF0000;
+}
+
+.emp--span {
+  color: #C85100;
+}
+
 .btn--primary {
   border-radius: 10px;
   padding: 8px 20px 8px 20px;
@@ -38,6 +55,7 @@
 
 .container--main .container--header {
   position: relative;
+  height: 70px;
   background-color: #eae9e9;
 }
 .container--main .container--header .header {
@@ -70,7 +88,7 @@
 }
 .container--main .container--header .header .burger--container > div {
   width: 24px;
-  border: 1.5px solid white;
+  border: 1.5px solid black;
 }
 .container--main .container--header .header .nav__main--mobile {
   padding: 20px 46px 20px 28px;
@@ -78,9 +96,10 @@
   border-radius: 8px;
   color: #424244;
   width: 184px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 5;
-  display: none;
 }
 .container--main .container--header .header .nav__main--mobile > ul {
   display: flex;
@@ -147,10 +166,30 @@
   cursor: pointer;
 }
 .container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup {
-  display: none;
+  position: absolute;
+  bottom: -190px;
+  right: 85px;
+  background-color: white;
+  width: 247px;
+  height: 164px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 10px;
 }
 .container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a {
+  display: block;
+  position: relative;
   transition: all ease-in-out 0.3s;
+}
+.container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 30px;
+  border: solid #ff6700 1px;
 }
 .container--main .container--header .header .nav__main--dsc .nav__desktop--ul > li .nav__desctop--signup > li > a:hover {
   color: #c85100;
@@ -167,6 +206,106 @@
   .container--main .container--header .header .nav__main--dsc {
     display: block;
   }
+}
+.container--main .sec--1 {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.container--main .sec--1 #registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container--main .sec--1 #registerForm > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+}
+.container--main .sec--1 #registerForm > div > label {
+  margin-left: 20px;
+  color: #424244;
+  opacity: 70%;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.container--main .sec--1 #registerForm > div > input {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 10px;
+  line-height: 23.44px;
+  border: 1px solid #FF6700;
+  padding: 13.5px 10px 13.5px 20px;
+}
+.container--main .sec--1 #registerForm > button {
+  width: 100%;
+  height: 50px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #FF6700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container--main .sec--1 .section__1--social {
+  margin-top: 20px;
+}
+.container--main .sec--1 .section__1--social .section__1__social--p {
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 18.75px;
+}
+.container--main .sec--1 .section__1--social .section__1__social--p::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 112px;
+  border: 1px solid #424244;
+}
+.container--main .sec--1 .section__1--social .section__1__social--p::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  width: 112px;
+  border: 1px solid #424244;
+}
+.container--main .sec--1 .section__1--social .section__container--logos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container--main .sec--1 .section__1--social .section__container--logos > div {
+  padding: 15px;
+  border: 1px solid #424244;
+  border-radius: 5px;
+}
+.container--main .sec--1 .section__1--social .sectiona--policy {
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 18.75px;
+}
+.container--main .sec--1 .section__1--social .sectiona--policy::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  border: 1px solid #424244;
 }
 
 /*# sourceMappingURL=register.css.map */
